@@ -4,12 +4,13 @@ date: 2023-08-01 20:56:23
 tags:  docker
 comments: true
 categories: 工具
+description: 使用 ms-ra-forwarder 项目通过 Docker 快速部署微软 TTS 服务
 ---
 
 # 在阅读App中使用微软TTS服务搭建教程
 ## 背景介绍
  为了在「阅读」(legado) App中实现听书功能
- 使用 ms-ra-forwarder 项目通过 Docker 快速部署微软 TTS 服务 <!--more-->
+ 使用 ms-ra-forwarder 项目通过 Docker 快速部署微软 TTS 服务 
 ## Docker 环境搭建
 ```bash
 # 1. 拉取最新镜像
