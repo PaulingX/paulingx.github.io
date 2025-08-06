@@ -4,6 +4,7 @@ date: 2023-09-21 20:49:48
 tags: 数据库
 comments: true
 categories: 笔记
+cover: ../images/2023/676c0dabb6186.png
 ---
 # Lucky 容器在 iKuai 路由器中的配置指南
 

@@ -4,6 +4,7 @@ date: 2024-12-25 23:15:21
 tags:  docker
 comments: true
 categories: 工具
+cover: ../images/2023/676c2192a559c.png
 ---
 # LskyPro 图床安装与配置指南 
 <!--more-->
