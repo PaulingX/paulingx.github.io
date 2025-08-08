@@ -135,8 +135,8 @@ systemctl restart crond.service
 crontab -l
 ```
 
-#### Windows - 使用任务计划程序
-
+#### Windows - 使用
+##### 使用任务计划程序
 1. 打开"任务计划程序"
 2. 点击"创建基本任务"
 3. 输入任务名称和描述
@@ -145,4 +145,17 @@ crontab -l
 6. 程序选择 rclone.exe
 7. 参数添加：`copy "C:\本地目录" webdav:/备份目录`
 8. 完成设置
+##### 使用vbs，隐藏命令窗口
+新建文件，保存为`rclone.bat`
+```bat
+rclone mount alist:/ f: --cache-dir 缓存目录 --vfs-cache-mode full --log-file e:xxx\log.log & 
+```
+新建文件，并保存为`start.vbs`
+```vbs
+CreateObject("WScript.Shell").Run "cmd /c x:/上面bat的位置/rclone.bat",0
+```
+将start.vbs文件放入以下路径下
+```
+C:\%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
 
